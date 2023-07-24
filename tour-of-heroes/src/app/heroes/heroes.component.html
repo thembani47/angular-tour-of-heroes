@@ -6,7 +6,7 @@
             (click)="onSelect(hero)" 
             [class.selected]="hero === selectedHero">
                 <span class="badge">{{ hero.id }} </span>
-                <span class="name">{{ hero.name }}</span>
+                <span class="name">{{ hero.name | titlecase }}</span>
             </button>
         </li>
     </ul>
